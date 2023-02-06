@@ -10,7 +10,5 @@ async def mes_start(message: Message):
             await message.answer('Ты уже начал игру! Играй давай!')
             break
     else:
-        await message.answer(f'Привет, {message.from_user.full_name}'
-                             f'Мы будем играть в конфеты. Бери от 1 до 28...')
-        my_game = [message.from_user.id, message.from_user.first_name, 150]
-        game.total.append(my_game)
+        await message.answer(f'Привет, {message.from_user.full_name}!\n'
+                             f'Для начала введи количество конфет в начале игры (маска ввода "/set ###")')

@@ -31,7 +31,7 @@ async def mes_help(message: Message):
 
 async def check_win(message: Message, win: str, duel: list):
     if duel[2] <= 0:
-        await message.answer(f'{win} победил! Поздравляю!')
+        await message.answer(f'{win} победил!')
         game.total.remove(duel)
         return True
     return False
