@@ -1,4 +1,5 @@
 from aiogram import Bot, Dispatcher
+from config import TELEGRAM_BOT_API
 
-bot = Bot('5724150381:AAHWiX5_7ZmyALHZXnVkAoCALL4LwWROlVM')
+bot = Bot(TELEGRAM_BOT_API)
 dp = Dispatcher(bot)
